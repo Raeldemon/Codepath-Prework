@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Pressing Melodies</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Pressing Melodies
+    </h1>
+    <p>
+      Repeat the pattern of buttons you are see highlight!
+      </p>
+    <div id = "Menu">
+      <!-- Star/End Buttons -->
+      <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+      <button id="endBtn" onclick="stopGame()" class="hidden">
+      End
+    </button>
+      <!-- lives -->
+      <p id = "livesText">
+      Lives : 2
+      </p>
+      </div>
+    <!-- GameButtons -->
+    <div id="gameButtonsArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+    </div>
+    <a href="https://www.freepik.com/vectors/music">
+      Music vector created by rawpixel.com - www.freepik.com
+    </a>
+  </body>
+</html>
