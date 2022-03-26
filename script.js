@@ -17,12 +17,12 @@ o.start(0)
 //Global constants 
   
   
-  const cluePauseTime = 200; // how long to pause in between clues
   const nextClueWaitTime = 1000; //how long to wait before starting the playback of the clue sequence
   
 
 //Global variables 
 
+  var cluePauseTime = 200; // how long to pause in between clues
   var clueHoldTime = 600; //how long to hold a clue's light/sound
   
   var pattern = [1,1,1,1,1,1];
@@ -33,11 +33,14 @@ o.start(0)
   var guessCounter ;
 
   var lives = 0;
+  var time = 2;
+  var timer;
 
 function startGame(){
   //initialize game variables
   progress = 2;
   lives = 2;
+  time = 2;
   gamePlaying = true;
   updateLives(lives);
   //swap the Start and End Buttons
@@ -46,6 +49,7 @@ function startGame(){
   
   ramdomSequnce();
   playClueSequence();
+  timer = setInterval(clock,1000);
 }
 
 function stopGame(){
@@ -67,6 +71,7 @@ function clearButton(btn){
 
 //Clue System Functions
 function playSingleClue(btn){
+  time = 2;
   if(gamePlaying){
     lightButton(btn);
     playTone(btn,clueHoldTime);
@@ -111,6 +116,7 @@ function winGame(){
 }
 
 function guess(btn){
+  time = 2;
   console.log("user guessed: " + btn);
   if(!gamePlaying){
     return;}
@@ -145,6 +151,22 @@ function guess(btn){
 function updateLives(lives){
   document.getElementById("livesText").innerHTML=("Lives : " + lives);
 }
+
+//Time clock fuction
+function clock(){
+  
+    if(time < 1){
+      document.getElementById("timeText").innerHTML=("Time : " + time + " s");
+      time = 3;
+      loseGame();
+    }else{
+      document.getElementById("timeText").innerHTML=("Time : " + time + " s");
+    }
+      time -= 1;
+  
+  console.log(time);
+}
+
 
 // Sound Synthesis Functions
 const freqMap = {
