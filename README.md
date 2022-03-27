@@ -50,6 +50,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 [https://www.w3schools.com/jsref]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
+
 While making the web game I did not find appealing the way objects moved around as the screen size changed and there was no info in the instructions of HTML worked. 
 For me HTML and CSS are new languages there for I had to spend time understanding them. By the end and with the help of a YouTube tutorial I shaped the website to 
 my desired look. First was the rearranging of the elements depending on the windows size, which I fixed by setting the body to six hundred pixels by six hundred pixels. 
@@ -64,12 +65,14 @@ and that’s when stroke came to my mind, making a white stroke truly made it st
 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
+
 After watching what happens behinds the scene, I wonder how to do animations and top bars. While I understand the concept, I still lack the knowledge on how to make them
  because if the program reads one line at the time, how can it process an animation without stop all other process. Also, how can I call a different HTML from the one I am on, 
 it works by making new HTMLs inside the one I am currently in. At last, I would like to learn about API's they are useful in creating interactions between different websites.
  But also, in creating bots that work while users input added information.
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+
 This project can be made into something more important, if I had the time adding a user controlled “cluetime” would be key. Having more interactivity would bring more 
 audience to the site, things like leader boards and personal bests allow far more entertainment to the end user. One of the biggest advantages is the lack of theme in the
 project as this brings the possibility to adapt to any medium. Also creating different modes to prolong the life of the web, things like “endless” or “music” mode. Can become
