@@ -39,14 +39,15 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](http://g.recordit.co/JeeoXRzyix.gif)
-![](https://www.w3schools.com/jsref)
+![](http://g.recordit.co/o6w0h5vfdz.gif)
+![](gif2-link-here)
 ![](gif3-link-here)
 ![](gif4-link-here)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 [Learn CSS Box Model In 8 Minutes -- https://www.youtube.com/watch?v=rIO5326FgPE]
+[https://www.w3schools.com/jsref]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 While making the web game I did not find appealing the way objects moved around as the screen size changed and there was no info in the instructions of HTML worked. 
